@@ -3,10 +3,10 @@
     require "connection.php";   
     
     if (isset($_POST["submit"])){
-        $title = $_POST["title"];
-        $description = $_POST["description"];
+        $title = trim($_POST["title"]);
+        $description = trim($_POST["description"]);
         $date = $_POST["date"];
-        $location = $_POST["location"];
+        $location = trim($_POST["location"]);
         $organizer_id = $_POST["organizer_id"];
 
         $query = "INSERT INTO 
@@ -65,7 +65,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
+    <title>Event Page</title>
     <style>
         td,th {
             padding: 10px;

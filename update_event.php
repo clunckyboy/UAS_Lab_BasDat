@@ -6,10 +6,10 @@
    
    if (isset($_POST["submit"])){
       
-      $title = $_POST["title"];
-      $description = $_POST["description"];
+      $title = trim($_POST["title"]);
+      $description = trim($_POST["description"]);
       $date = $_POST["date"];
-      $location = $_POST["location"];
+      $location = trim($_POST["location"]);
       $organizer_id = $_POST["organizer_id"];
 
       $query = "UPDATE event 

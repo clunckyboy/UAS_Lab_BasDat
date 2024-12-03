@@ -3,23 +3,25 @@
    require "connection.php";
    
    if (!$_GET["id"]){
-      header("location: user.php");
+      header("location: registrasi_event.php");
       exit;
    }
 
+   $table = '"public"."eventRegistration"';
+
    $id = $_GET["id"];
    $query = "DELETE FROM 
-                  public.user
+                  $table
                WHERE 
-                  user_id = $id";
-   
+                  registration_id = $id";
+
    $result = pg_query($conn, $query);
 
    if (!$result){
       die(pg_last_error());
    }
 
-   header("location: user.php");
+   header("location: registrasi_event.php");
    exit;
 
 ?>

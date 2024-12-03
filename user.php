@@ -32,7 +32,7 @@
                         public.user 
                     ORDER BY 
                         join_date 
-                    DESC";
+                    ASC";
 
     $result_users = pg_query($conn, $query_users);
 
@@ -43,7 +43,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi Event</title>
+    <title>User Page</title>
     <style>
         td,th {
             padding: 10px;

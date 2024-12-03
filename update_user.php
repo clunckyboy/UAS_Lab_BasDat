@@ -31,7 +31,9 @@
    
 
    $query = "SELECT 
-                  name, email, role
+                  name, 
+                  email, 
+                  role
                FROM 
                   public.user 
                WHERE 
