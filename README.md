@@ -1,4 +1,12 @@
 # Website Event Management Menggunakan PostgreSQL
+
+Nama Anggota : 
+* Edwin Jonatan Purba (231401091)
+* Michael Valent Satrio Munthe (231401103)
+* Luthfi Zahran Panggabean (231401082)
+* Susena Yudha Wijaya (231401109)
+
+
 Kami membuat sebuah web dan basis data event management dengan ERD seperti berikut
 
 <img src="https://github.com/user-attachments/assets/56997045-b770-44c6-9407-992ea06b2d98" alt="ERD Event Management" width="900">
